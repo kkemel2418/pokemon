@@ -1,0 +1,11 @@
+<p>todo works!</p>
+<button routerLink="/detalhe-pokemon">
+  go to details
+</button>
+
+<ul>
+  <li *ngFor="let item of lista">
+   <!-- {{ item.name }} - <a [href]="item.url" target="_blank">Link</a> -->
+   <a [href]="item.url" target="_blank">{{ item.name }}</a>
+  </li>
+</ul>
